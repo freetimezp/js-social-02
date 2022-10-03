@@ -1,9 +1,23 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {useSession} from "next-auth/react";
 import Avatar from "./Avatar";
+import {useForm} from 'react-hook-form';
+
+import {LinkIcon, PhotoIcon} from '@heroicons/react/24/outline';
+import {mockSession} from "next-auth/client/__tests__/helpers/mocks";
+import image = mockSession.user.image;
+
+type FormData = {
+    postTitle: string;
+    postBody: string;
+    postImage: string;
+    subreddit: string;
+}
 
 const PostBox = () => {
     const {data: session} = useSession();
+    const [imageBoxOpen, setImageBoxOpen] = useState<boolean>(false);
+    const {register, setValue, handleSubmit, watch, formState: {errors}} = useForm<FormData>();
 
     return (
         <form className="sticky top-16 z-50 bg-white border rounded-md border-gray-300 p-2">
@@ -11,11 +25,52 @@ const PostBox = () => {
                 <Avatar />
 
                 <input
+                    {...register('postTitle', {required: true})}
                     type="text" disabled={!session}
                     className="bg-gray-50 p-2 pl-5 outline-none rounded-md flex-1"
                     placeholder={session ? 'Create a post by entering a title..' : 'Sign in to Post!'}
                 />
+
+                <PhotoIcon
+                    onClick={() => setImageBoxOpen(!imageBoxOpen)}
+                    className={`h-6 text-gray-300 cursor-pointer ${imageBoxOpen && 'text-orange-400'}`}
+                />
+
+                <LinkIcon className="h-6 text-gray-300" />
             </div>
+
+            {!!watch('postTitle') && (
+                <div className="flex flex-col py-2">
+                    <div className="flex items-center px-2">
+                        <p className="min-w-[90px]">Body:</p>
+                        <input
+                            {...register('postBody')}
+                            type="text" placeholder="Text (optional)"
+                            className="m-2 flex-1 bg-blue-50 p-2 outline-none"
+                        />
+                    </div>
+
+                    <div className="flex items-center px-2">
+                        <p className="min-w-[90px]">Subreddit:</p>
+                        <input
+                            {...register('subreddit')}
+                            type="text" placeholder="i.e. React-js"
+                            className="m-2 flex-1 bg-blue-50 p-2 outline-none"
+                        />
+                    </div>
+
+                    {imageBoxOpen && (
+                        <div className="flex items-center px-2">
+                            <p className="min-w-[90px]">Image URL:</p>
+                            <input
+                                {...register('postImage')}
+                                type="text" placeholder="(optional)"
+                                className="m-2 flex-1 bg-blue-50 p-2 outline-none"
+                            />
+                        </div>
+                    )}
+                </div>
+            )}
         </form>
     );
 }

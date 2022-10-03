@@ -7,6 +7,7 @@ const Home: NextPage = () => {
         <div className="">
             <Head>
                 <title>Social - 02</title>
+                <link rel="icon" href="reddit.png"/>
             </Head>
 
             <PostBox />
