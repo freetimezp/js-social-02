@@ -20,9 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d90b3c2-bb5f-4fa1-9cc7-098daa19251d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/components/PostBox.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Avatar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/PostBox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PostBox.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +71,7 @@
       <updated>1664729407721</updated>
       <workItem from="1664729410734" duration="2101000" />
       <workItem from="1664731728948" duration="6746000" />
-      <workItem from="1664792752287" duration="12403000" />
+      <workItem from="1664792752287" duration="14672000" />
     </task>
     <servers />
   </component>
