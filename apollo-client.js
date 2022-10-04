@@ -1,9 +1,9 @@
 import {ApolloClient, InMemoryCache} from '@apollo/client';
 
 const client = new ApolloClient({
-    uri: "https://fangshan.stepzen.net/api/modest-salamander/__graphql",
+    uri: "http://localhost:5001/api/modest-salamander",
     headers: {
-        Authorisation: `ApiKey ${process.env.NEXT_PUBLIC_STEPZEN_KEY}`
+        Authorisation: `ApiKey ${process.env.NEXT_PUBLIC_STEPZEN_KEY}`,
     },
     cache: new InMemoryCache(),
 });
