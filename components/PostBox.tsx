@@ -66,16 +66,17 @@ const PostBox = () => {
                     }
                 })
 
-                console.log('New Post added', newPost);
+                //console.log('New Post added', newPost);
             }else{
                 //use existing subreddit
+                //console.log(getSubredditListByTopic);
                 const image = formData.postImage || '';
 
                 const {data: {insertPost: newPost}} = await addPost({
                     variables: {
                         body: formData.postBody,
                         image: image,
-                        subreddit_id: getSubredditListByTopic.id,
+                        subreddit_id: getSubredditListByTopic[0].id,
                         title: formData.postTitle,
                         username: session?.user?.name
                     }
