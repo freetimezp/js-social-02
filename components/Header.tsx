@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from "next/image";
+import Link from "next/link";
 import {signIn, signOut, useSession} from "next-auth/react";
 
 import {BeakerIcon, ChevronDownIcon, HomeIcon} from "@heroicons/react/24/solid";
@@ -13,10 +14,12 @@ const Header = () => {
     return (
         <div className="flex items-center bg-white px-4 py-2 shadow-sm sticky top-0 z-50">
             <div className="relative h-10 w-20 flex-shrink-0 cursor-pointer">
-                <Image
-                    src="https://cdn.worldvectorlogo.com/logos/reddit-logo-new.svg"
-                    layout="fill" objectFit="contain"
-                />
+                <Link href="/">
+                    <Image
+                        src="https://cdn.worldvectorlogo.com/logos/reddit-logo-new.svg"
+                        layout="fill" objectFit="contain"
+                    />
+                </Link>
             </div>
 
             <div className="flex items-center mx-7 xl:min-w-[300px]">
@@ -54,7 +57,7 @@ const Header = () => {
                     <div className="relative w-5 h-5 flex-shrink-0">
                         <Image
                             src="https://cdn.worldvectorlogo.com/logos/reddit-2.svg" alt="sign"
-                            width={5} height={5} layout="fill" objectFit="contain"
+                            layout="fill" objectFit="contain"
                         />
                     </div>
                     <div className="flex-1 text-xs">

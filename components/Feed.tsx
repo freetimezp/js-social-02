@@ -16,7 +16,7 @@ const Feed = ({topic}: Props) => {
     });
     const posts: Post[] = !topic ? data?.getPostList : data?.getPostListByTopic;
 
-    console.log(data);
+    //console.log(data);
 
     return (
         <div>

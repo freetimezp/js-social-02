@@ -20,12 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d90b3c2-bb5f-4fa1-9cc7-098daa19251d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/subreddit/[topic].tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/post/[postId].tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Feed.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Feed.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Post.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Post.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/PostBox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PostBox.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphql/mutations.ts" beforeDir="false" afterPath="$PROJECT_DIR$/graphql/mutations.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/graphql/queries.ts" beforeDir="false" afterPath="$PROJECT_DIR$/graphql/queries.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stepzen/postgresql/index.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/stepzen/postgresql/index.graphql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +83,7 @@
       <workItem from="1664731728948" duration="6746000" />
       <workItem from="1664792752287" duration="20666000" />
       <workItem from="1664883420005" duration="24181000" />
-      <workItem from="1664961395481" duration="8651000" />
+      <workItem from="1664961395481" duration="21360000" />
     </task>
     <servers />
   </component>
@@ -105,9 +110,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1664731724049" />
-    <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1664897269412">
+    <state x="667" y="253" width="872" height="640" key="find.popup" timestamp="1664981643046">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1664897269412" />
+    <state x="667" y="253" width="872" height="640" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1664981643046" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1664979806177">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1664979806177" />
   </component>
 </project>
