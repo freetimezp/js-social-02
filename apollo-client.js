@@ -5,11 +5,6 @@ const client = new ApolloClient({
     headers: {
         Authorisation: `ApiKey ${process.env.NEXT_PUBLIC_STEPZEN_KEY}`,
     },
-    watchQuery: {
-        fetchOptions: {
-            mode: 'no-cors',
-        },
-    },
     cache: new InMemoryCache(),
 });
 
