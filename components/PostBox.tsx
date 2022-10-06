@@ -110,7 +110,8 @@ const PostBox = ({subreddit}: Props) => {
 
     return (
         <form
-            className="sticky top-16 md:top-20 z-50 bg-white border rounded-md border-gray-300 p-2 mb-4 shadow-md shadow-blue-400"
+            className="sticky top-16 md:top-20 z-50 bg-white border rounded-md border-gray-300 p-2 mb-4 shadow-md shadow-blue-400
+            mx-1 md:mx-auto"
             onSubmit={onSubmit}
         >
             <div className="flex items-center space-x-3">

@@ -24,6 +24,7 @@
       <change beforePath="$PROJECT_DIR$/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Post.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Post.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/PostBox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PostBox.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/post/[postId].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/post/[postId].tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +78,7 @@
       <workItem from="1664792752287" duration="20666000" />
       <workItem from="1664883420005" duration="24181000" />
       <workItem from="1664961395481" duration="30429000" />
-      <workItem from="1665064685074" duration="7619000" />
+      <workItem from="1665064685074" duration="9764000" />
     </task>
     <servers />
   </component>

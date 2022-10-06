@@ -53,7 +53,7 @@ const PostPage = () => {
     }
 
     return (
-        <div className="mx-auto my-7 max-w-5xl">
+        <div className="mx-1 md:mx-auto my-7 max-w-5xl">
             <Post post={post} />
 
             <div className="rounded-md border border-gray-300 bg-white p-5 pl-16">
