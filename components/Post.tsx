@@ -86,9 +86,11 @@ const Post = ({post}: Props) => {
     return (
         <Link href={`/post/${post.id}`}>
             <div className="rounded-md flex cursor-pointer border border-gray-300 bg-white shadow-md hover:shadow-blue-200 hover:border
-                hover:shadow-lg mb-4 hover:border-blue-500"
+                hover:shadow-lg m-1 mb-4 hover:border-blue-500 max-w-full"
             >
-                <div className="flex flex-col items-center justify-start space-y-1 rounded-l-md bg-gray-100 p-4 text-gray-400">
+                <div className="flex flex-col items-center justify-start space-y-1 rounded-l-md bg-gray-100 p-1 text-gray-400
+                    md:p-4"
+                >
                     <ArrowUpIcon
                         onClick={() => upVote(true)}
                         className={`voteButtons hover:text-green-500 ${vote && 'text-green-500'}`}
@@ -102,7 +104,7 @@ const Post = ({post}: Props) => {
                     />
                 </div>
 
-                <div className="p-3 pb-1">
+                <div className="p-1 pb-1 md:p-3">
                     <div className="flex items-center space-x-2">
                         <Avatar seed={post.subreddit[0]?.topic} />
 
@@ -127,23 +129,23 @@ const Post = ({post}: Props) => {
 
                     <div className="flex space-x-4 text-gray-400">
                         <div className="postButtons">
-                            <ChatBubbleOvalLeftIcon className="h-6 w-6" />
+                            <ChatBubbleOvalLeftIcon className="h-4 w-4 md:w-6 md:h-6" />
                             <p className="">{post.comments.length} Comments</p>
                         </div>
                         <div className="postButtons">
-                            <GiftIcon className="h-6 w-6" />
+                            <GiftIcon className="h-4 w-4 md:w-6 md:h-6" />
                             <p className="hidden sm:inline"> Award</p>
                         </div>
                         <div className="postButtons">
-                            <ShareIcon className="h-6 w-6" />
+                            <ShareIcon className="h-4 w-4 md:w-6 md:h-6" />
                             <p className="hidden sm:inline"> Share</p>
                         </div>
                         <div className="postButtons">
-                            <BookmarkIcon className="h-6 w-6" />
+                            <BookmarkIcon className="h-4 w-4 md:w-6 md:h-6" />
                             <p className="hidden sm:inline"> Save</p>
                         </div>
                         <div className="postButtons">
-                            <EllipsisHorizontalIcon className="h-6 w-6" />
+                            <EllipsisHorizontalIcon className="h-4 w-4 md:w-6 md:h-6" />
                         </div>
                     </div>
                 </div>
