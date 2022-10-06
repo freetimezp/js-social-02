@@ -22,11 +22,13 @@ const Header = () => {
                 </Link>
             </div>
 
-            <div className="flex items-center mx-7 xl:min-w-[100px] hidden md:inline-flex">
-                <HomeIcon className="h-5 w-5" />
-                <p className="flex-1 ml-2 hidden lg:inline">Home</p>
-                <ChevronDownIcon className="h-5 w-5" />
-            </div>
+            {session && (
+                <div className="flex items-center mx-7 xl:min-w-[100px] hidden md:inline-flex">
+                    <HomeIcon className="h-5 w-5" />
+                    <p className="flex-1 ml-2 hidden lg:inline">Home</p>
+                    <ChevronDownIcon className="h-5 w-5" />
+                </div>
+            )}
 
             {session && (
                 <form className="flex flex-1 items-center w-[155px] md:max-w-full space-x-2 rounded-sm md:border border-gray-200 bg-gray-100 md:px-3 p-1">
