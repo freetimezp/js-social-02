@@ -22,8 +22,7 @@
     <list default="true" id="3d90b3c2-bb5f-4fa1-9cc7-098daa19251d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apollo-client.js" beforeDir="false" afterPath="$PROJECT_DIR$/apollo-client.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/versel.json" beforeDir="false" afterPath="$PROJECT_DIR$/versel.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/versel.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +76,8 @@
       <workItem from="1664792752287" duration="20666000" />
       <workItem from="1664883420005" duration="24181000" />
       <workItem from="1664961395481" duration="30429000" />
-      <workItem from="1665064685074" duration="21042000" />
+      <workItem from="1665064685074" duration="22166000" />
+      <workItem from="1665134943295" duration="15135000" />
     </task>
     <servers />
   </component>
@@ -104,10 +104,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1664731724049" />
-    <state x="667" y="253" width="872" height="640" key="find.popup" timestamp="1664981643046">
+    <state x="482" y="201" width="872" height="640" key="find.popup" timestamp="1665135729110">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="667" y="253" width="872" height="640" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1664981643046" />
+    <state x="482" y="201" width="872" height="640" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1665135729110" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1665143187372">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1665143187372" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1664979806177">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
